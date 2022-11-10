@@ -6,39 +6,40 @@ body{
     background-size: 100%;
 }
 .sun{
-    height:120px;
-    width:120px;
-    /* sun image */
-    background-image:url();
+    height: 120px;
+    width: 120px;
+    background-image: url("./assets/sun.jpg");
     border-radius: 50%;
     background-size: cover;
-    box-shadow: -4px 2px 56px #f9c05f; /*color of the border of the image*/
     position: absolute;
-    left: 50%;
+    box-shadow: -4px 2px 56px #f9c05f;
     top: 50%;
-    transform:translate(-50%,-50%);
-
-
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .mercury{
     height: 20px;
     width: 20px;
-    background: radial-gradient(circle,#935f2a 60% #54370c 75%);
+    background: #CECCD1;
     border-radius: 50%;
     position: absolute;
     box-shadow: -4px 2px 56px #f9c05f;
     left: 43%;
-    top: 42%;
-    transform:translate(-50%,-50%);
-    animation:orbit2 2s linear infinite;
+    top: 44%;
+    transform: translate(-50%,-50%);
+    animation: orbit2 2s linear infinite;
 }
 /* To animate the path of orbit */
 @keyframes orbit2{ 
-    form {transform: rotate(0deg)rotate(0deg)translateX(70px);}
-    to {transform: rotate(360deg)rotate(-360deg) translateX(70px)  ;}
+    from{
+        transform: rotate(0)translateX(80px) rotate(0);
+    }
+    to{
+        transform: rotate(360deg)translateX(80px) rotate(-360deg);
+        }
 }
 
-p{
+.planet-name{
     color:white;
     font-family: system-ui;
     position: absolute;
@@ -47,19 +48,19 @@ p{
 
 }
 
-.mercury-outline,.venus-outline-1,.earth-outline-1,.mars-outline-1,.jupiter-outline-1,.saturn-outline-1,.uranus-outline-1,.neptune-outline-1{
+.planet-outline{
     border-radius: 50%;
     border: 1px dotted #ddd9;
-    position:absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
+    cursor: pointer;
 }
 
-.mercury-outline{
-    height: 140px;
-    width: 140px;
+#mercury-outline{
+    height: 160px;
+    width: 160px;
 }
 
 .venus{
@@ -76,11 +77,15 @@ p{
     animation:orbit3 10s linear infinite;
 }
 @keyframes orbit3{ 
-    form {transform: rotate(0deg)translateX(100px) rotate(0deg);}
-    to {transform: rotate(360deg)translateX(100px) rotate(-360deg)  ;}
+    from{
+        transform: rotate(0deg)translateX(125px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg)translateX(125px) rotate(-360deg);
+    }
 }
 
-.venus-outline-1{
-    height: 140px;
-    width: 140px;
+#venus-outline{
+    height: 250px;
+    width: 250px;
 } 
