@@ -1,0 +1,111 @@
+<!Doctype HTML>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="flashcard.css">
+        <title>
+            Solar System Simulaltion
+        </title>
+    </head>
+</html>
+
+<body>
+<div class="sun"> </div>
+
+<div class = "planet-outline" id="mercury-outline">
+    <div class = "mercury">
+        <p class="planet-name"> Mercury</p>
+    </div>
+
+</div>
+
+
+
+<div class="planet-outline" id="venus-outline">
+    <div class="venus">
+        <p class="planet-name">Venus</p>
+    </div>
+</div>
+
+
+
+<div class = "planet-outline" id="earth-outline">
+    <div class = "earth">
+        <p class= "planet-name">Earth</p>
+        <!-- Moon and its orbit -->
+        <div class="moon-orbit">
+            <div class ="moon">
+                <p class= "planet-name">Moon</p>
+            </div>
+        </div>        
+    </div>
+</div>
+
+
+<div class = "planet-outline" id="mars-outline">
+    <div class = "mars">
+        <p class="planet-name"> Mars</p>
+    </div>
+</div>
+
+
+
+<div class = "planet-outline" id="jupiter-outline">
+    <div class = "jupiter">
+        <p class="planet-name"> Jupiter</p>
+    </div>
+</div>
+
+
+<div class = "planet-outline" id="saturn-outline">
+    <div class = "saturn">
+        <p class="planet-name"> Saturn</p>
+    </div>
+</div>
+
+<div class = "planet-outline" id="uranus-outline">
+    <div class = "uranus">
+        <p class="planet-name">Uranus</p>
+    </div>
+</div>
+
+<div class = "planet-outline" id="neptune-outline">
+    <div class = "neptune">
+        <p class="planet-name"> Neptune</p>
+    </div>
+</div>
+
+<div class="flashcard-container">
+    <div class="flashcard">
+        <div class="image-container">
+            <button class="x-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="./images/earth.svg" alt="" class="planet-logo" id="planet-logo">
+        </div>
+        <h1 class="planet-title" id="planet-title">Earth</h1>
+        <div class="planet-info">
+            <p id="order"><span>Order:</span> Third from Sun</p>
+            <p id="distSun"><span>Distance from Sun:</span> 57.9 Mi km</p>
+            <p id="diameter"><span>Diameter:</span> 149.6 km</p>
+            <p id="moons"><span>Moons:</span> 1</p>
+            <p id="lengthDay"><span>Length of a day: </span> 24 hours</p>
+            <p id="temp"><span>Mean temperature:</span> 15&#8451;</p>
+        </div>
+    </div>
+</div>
+
+<div class="button-container">
+    <button class="open-flashcard" id="mercury">Mercury</button>
+    <button class="open-flashcard" id="venus">Venus</button>
+    <button class="open-flashcard" id="earth">Earth</button>
+    <button class="open-flashcard" id="mars">Mars</button>
+    <button class="open-flashcard" id="jupiter">Jupiter</button>
+    <button class="open-flashcard" id="saturn">Saturn</button>
+    <button class="open-flashcard" id="uranus">Uranus</button>
+    <button class="open-flashcard" id="neptune">Neptune</button>
+</div>
+<script src="index.js"></script>
+</body>

@@ -1,0 +1,77 @@
+
+.flashcard-container{
+    width: 500px;
+    border: 10px solid rgb(19, 17, 51);
+    border-radius: 20px;
+    padding-block: 1.5rem;
+    background-color: #f5f5f5e5;
+    z-index: 1;
+    transition: all 300ms ease-in;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.flashcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(19, 17, 51);
+}
+
+
+
+.flashcard .image-container{
+    background-image: url("./images/stary.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.flashcard .image-container .x-btn{
+    display: block;
+    margin-top: 0.25rem;
+    margin-left: auto;
+    margin-right: 0.25rem;
+    margin-bottom: 0.5rem;
+    border:none;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: rgb(19, 17, 51);
+    color: white;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.flashcard .image-container .planet-logo{
+    height: 300px;
+    width: 100%;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.flashcard .planet-title{
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Imprima', sans-serif;
+    transition: opacity 300ms ease-in;
+}
+
+.flashcard .planet-info{
+    width: 80%;
+    margin: 0 3rem;
+}
+
+.flashcard .planet-info p{
+    font-style: italic;
+}
+
+.flashcard .planet-info p span{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-style: normal;
+}
